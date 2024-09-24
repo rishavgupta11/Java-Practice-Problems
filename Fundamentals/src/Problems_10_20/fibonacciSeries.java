@@ -3,13 +3,14 @@ package Problems_10_20;
 public class fibonacciSeries {
     public static void main(String[] args) {
 
-        int n = 10, a = 0, b = 1, c;
+        int n1 = 0, n2 = 1, n3, count = 10;
+        System.out.print(n1+" "+n2);
 
-        for (int i = 1; i <= n; i++) {
-            System.out.print(a + " ");
-            c = a + b;
-            a = b;
-            b = a;
+        for (int i = 2; i < count; i++) {
+            n3 = n1 + n2;
+            System.out.print(" "+n3);
+            n1 = n2;
+            n2 = n3;
         }
     }
 }
